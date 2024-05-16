@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>login</title>
+    <style media="screen">
+        *,
+        *:before,
+        *:after {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #080710;
+        }
+
+        .background {
+            width: 430px;
+            height: 600px;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            top: 50%;
+        }
+
+        .background .shape {
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            border-radius: 50%;
+        }
+
+        .shape:first-child {
+            background: linear-gradient(
+                #1845ad,
+                #23a2f6
+            );
+            left: -80px;
+            top: -80px;
+        }
+
+        .shape:last-child {
+            background: linear-gradient(
+                to right,
+                #ff512f,
+                #f09819
+            );
+            right: -30px;
+            bottom: -80px;
+        }
+
+        form {
+            height: 500px; /* Adjusted height */
+            width: 300px; /* Adjusted width */
+            background-color: rgba(255, 255, 255, 0.13);
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+            padding: 30px 25px; /* Adjusted padding */
+        }
+
+        form * {
+            font-family: 'Poppins', sans-serif;
+            color: #ffffff;
+            letter-spacing: 0.5px;
+            outline: none;
+            border: none;
+        }
+
+        form h3 {
+            font-size: 24px; /* Adjusted font size */
+            font-weight: 500;
+            line-height: 32px;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-top: 20px; /* Adjusted margin */
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        input {
+            display: block;
+            height: 40px; /* Adjusted height */
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.07);
+            border-radius: 3px;
+            padding: 0 10px;
+            margin-top: 8px;
+            font-size: 14px;
+            font-weight: 300;
+        }
+
+        ::placeholder {
+            color: #e5e5e5;
+        }
+
+        button {
+            margin-top: 30px; /* Adjusted margin */
+            width: 100%;
+            background-color: #ffffff;
+            color: #080710;
+            padding: 12px 0; /* Adjusted padding */
+            font-size: 16px; /* Adjusted font size */
+            font-weight: 600;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .social {
+            margin-top: 20px; /* Adjusted margin */
+            display: flex;
+        }
+
+        .social div {
+            background: red;
+            width: 150px;
+            border-radius: 3px;
+            padding: 5px 10px 10px 5px;
+            background-color: rgba(255, 255, 255, 0.27);
+            color: #eaf0fb;
+            text-align: center;
+        }
+
+        .social div:hover {
+            background-color: rgba(255, 255, 255, 0.47);
+        }
+
+        .social .fb {
+            margin-left: 25px;
+        }
+
+        .social i {
+            margin-right: 4px;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <form>
+        <center>
+            <p style="color:gray;">NTV</p>
+        </center>
+        <h3>Sign Up</h3>
+        <table>
+            <tr>
+                <td>
+                    User Name:
+                </td>
+                <td>
+                    <input type="text" placeholder="Name123" name="">
+                </td>
+            </tr>
+            <tr>
+                <td>Name:</td>
+
+                <td>
+                    <input type="text" placeholder="Name" name="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Phone Number:
+                </td>
+                <td>
+                    <input type="phone" placeholder="9867******">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Email Id:
+                </td>
+                <td>
+                    <input type="email" placeholder="example1@*8">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Password:
+                </td>
+                <td>
+                    <input type="password" placeholder="Password">
+                </td>
+            </tr>
+        </table>
+        <button>SIGN UP</button>
+    </form>
+    <footer>
+        <button onclick="location.href='file:///C:/Users/rohit/Desktop/WT%20DEEPTHI/Register.html';">Register</button>
+        <button onclick="location.href='file:///C:/Users/rohit/Desktop/WT%20DEEPTHI/Home.html';">Home</button>
+    </footer>
+</body>
+</html>
